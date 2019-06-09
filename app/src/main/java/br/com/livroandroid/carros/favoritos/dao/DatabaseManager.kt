@@ -1,8 +1,9 @@
-package br.com.livroandroid.carros.domain.dao
+package br.com.livroandroid.carros.favoritos.dao
 
 import androidx.room.Room
 import br.com.livroandroid.CarrosApplication
 
+// Controla o banco de dados
 object DatabaseManager {
     // Singleton do Room: banco de dados
     private var dbInstance: CarrosDatabase

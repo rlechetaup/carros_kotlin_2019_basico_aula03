@@ -1,14 +1,14 @@
-package br.com.livroandroid.carros.domain
+package br.com.livroandroid.carros.login
 
 import android.util.Log
-import br.com.livroandroid.carros.extensions.fromJson
+import br.com.livroandroid.carros.utils.extensions.fromJson
 import br.com.livroandroid.carros.utils.HttpHelper
 
+// API de Login
+// "object" no Kotlin deixa essa classe com Singleton
 object LoginService {
 
-    fun login(login:String, senha:String): Response {
-        // Post
-        //http://livrowebservices.com.br/rest/login
+    fun login(login:String, senha:String): LoginResponse {
 
         try {
             val url = "http://livrowebservices.com.br/rest/login"
@@ -20,7 +20,7 @@ object LoginService {
 
             val json = HttpHelper.postForm(url, params)
             Log.d("up","json: $json")
-            val response = fromJson<Response>(json)
+            val response = fromJson<LoginResponse>(json)
             Log.d("up","response: $response")
             return response
         }catch (error: Exception) {

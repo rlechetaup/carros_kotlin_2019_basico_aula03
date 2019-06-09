@@ -1,19 +1,19 @@
-package br.com.livroandroid.carros.activity
+package br.com.livroandroid.carros.lista
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.domain.Carro
-import br.com.livroandroid.carros.domain.FavoritosService
-import br.com.livroandroid.carros.extensions.loadUrl
-import com.squareup.picasso.Picasso
+import br.com.livroandroid.carros.favoritos.FavoritosService
+import br.com.livroandroid.carros.utils.extensions.loadUrl
 import kotlinx.android.synthetic.main.activity_carro.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 
+// Detalhes do carro
+// Possui o botão para favoritar na ActionBar
 class CarroActivity : AppCompatActivity() {
 
     val carro by lazy {

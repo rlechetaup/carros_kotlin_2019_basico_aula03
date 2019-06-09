@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.fragment
+package br.com.livroandroid.carros.lista
 
 
 import android.os.Bundle
@@ -10,10 +10,6 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.activity.CarroActivity
-import br.com.livroandroid.carros.adapter.CarroAdapter
-import br.com.livroandroid.carros.domain.Carro
-import br.com.livroandroid.carros.domain.CarroService
 import kotlinx.android.synthetic.main.fragment_carros.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.startActivity

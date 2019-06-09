@@ -4,13 +4,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.CarroActivity"
+        tools:context=".lista.CarroActivity"
         android:orientation="vertical"
         android:gravity="center">
 
     <fragment
             android:id="@+id/CarrosFragment"
-            class="br.com.livroandroid.carros.fragment.CarrosFragment"
+            class="br.com.livroandroid.carros.lista.CarrosFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
     />

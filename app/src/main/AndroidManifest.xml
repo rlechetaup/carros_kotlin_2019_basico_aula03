@@ -16,22 +16,21 @@
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.MainActivity">
+        <activity android:name=".home.MainActivity">
         </activity>
         <activity
-                android:name=".activity.CarroActivity"
-                android:parentActivityName=".activity.CarrosActivity">
+                android:name=".lista.CarroActivity"
+                android:parentActivityName=".lista.CarrosActivity">
         </activity>
-        <activity android:name=".activity.BemVindoActivity">
-        </activity>
-        <activity android:name=".activity.LoginActivity">
+
+        <activity android:name=".login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.CarrosActivity"/>
+        <activity android:name=".lista.CarrosActivity"/>
     </application>
 
 </manifest>

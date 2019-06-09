@@ -5,6 +5,9 @@ import android.util.Log
 import java.lang.IllegalStateException
 
 /**
+ * Classe global que gerencia ciclo de vida do app.
+ * É cadastrada na tag <application> do AndroidManifest.xml
+ *
  * MultiDexApplication:
  * https://developer.android.com/studio/build/multidex.html?hl=pt-br
  */

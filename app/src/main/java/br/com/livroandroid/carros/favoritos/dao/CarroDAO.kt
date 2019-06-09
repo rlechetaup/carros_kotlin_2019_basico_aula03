@@ -1,7 +1,7 @@
-package br.com.livroandroid.carros.domain.dao
+package br.com.livroandroid.carros.favoritos.dao
 
 import androidx.room.*
-import br.com.livroandroid.carros.domain.Carro
+import br.com.livroandroid.carros.lista.Carro
 
 @Dao
 interface CarroDAO {

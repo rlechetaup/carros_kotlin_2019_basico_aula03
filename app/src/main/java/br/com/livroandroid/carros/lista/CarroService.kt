@@ -1,17 +1,15 @@
-package br.com.livroandroid.carros.domain
+package br.com.livroandroid.carros.lista
 
 import android.util.Log
-import br.com.livroandroid.carros.extensions.fromJson
+import br.com.livroandroid.carros.utils.extensions.fromJson
 import br.com.livroandroid.carros.utils.HttpHelper
 
-/**
- * Implementação com OkHttp
- */
+// Web Service dos carros
 class CarroService {
 
+    // isso faz com que os métodos aqui dentro fiquem estáticos
     companion object {
 
-        // Busca os carros por tipo (clássicos, esportivos ou luxo)
         fun getCarros(): List<Carro> {
             try {
                 val url = "http://livrowebservices.com.br/rest/carros"

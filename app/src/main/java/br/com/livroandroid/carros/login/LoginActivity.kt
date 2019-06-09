@@ -1,13 +1,14 @@
-package br.com.livroandroid.carros.activity
+package br.com.livroandroid.carros.login
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.domain.LoginService
+import br.com.livroandroid.carros.home.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
 import org.jetbrains.anko.*
 
+// Tela de Login
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

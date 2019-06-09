@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.fragment
+package br.com.livroandroid.carros.favoritos
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -9,15 +9,15 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.LinearLayoutManager
 
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.activity.CarroActivity
-import br.com.livroandroid.carros.adapter.CarroAdapter
-import br.com.livroandroid.carros.domain.Carro
-import br.com.livroandroid.carros.domain.FavoritosService
+import br.com.livroandroid.carros.lista.CarroActivity
+import br.com.livroandroid.carros.lista.CarroAdapter
+import br.com.livroandroid.carros.lista.Carro
 import kotlinx.android.synthetic.main.fragment_carros.*
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.uiThread
 
+// Componente da lista de favoritos
 class FavoritosFragment : Fragment() {
 
     override fun onCreateView(

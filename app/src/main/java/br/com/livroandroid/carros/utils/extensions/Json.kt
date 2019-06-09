@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.extensions
+package br.com.livroandroid.carros.utils.extensions
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder

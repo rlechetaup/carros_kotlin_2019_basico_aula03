@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.activity
+package br.com.livroandroid.carros.utils.extensions
 
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity

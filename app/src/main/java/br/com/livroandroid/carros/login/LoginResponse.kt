@@ -1,6 +1,6 @@
-package br.com.livroandroid.carros.domain
+package br.com.livroandroid.carros.login
 
-class Response {
+class LoginResponse {
     var status = ""
     var msg = ""
     fun isOk(): Boolean {

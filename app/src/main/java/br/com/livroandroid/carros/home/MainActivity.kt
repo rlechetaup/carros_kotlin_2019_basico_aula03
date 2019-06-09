@@ -1,12 +1,14 @@
-package br.com.livroandroid.carros.activity
+package br.com.livroandroid.carros.home
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.content.ContextCompat
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.adapter.TabsAdapter
+import br.com.livroandroid.carros.home.TabsAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
+// Home com Tabs
+// O ViewPager faz o carroussel
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.domain
+package br.com.livroandroid.carros.lista
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

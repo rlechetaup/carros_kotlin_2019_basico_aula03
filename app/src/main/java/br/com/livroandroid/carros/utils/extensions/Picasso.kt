@@ -1,4 +1,4 @@
-package br.com.livroandroid.carros.extensions
+package br.com.livroandroid.carros.utils.extensions
 
 import android.view.View
 import android.widget.ImageView
@@ -6,6 +6,7 @@ import android.widget.ProgressBar
 import com.squareup.picasso.Picasso
 import java.lang.Exception
 
+// Adiciona o método loadUrl no ImageView
 fun ImageView.loadUrl(url: String?, progress: ProgressBar? = null) {
     if (url == null || url.trim().isEmpty()) {
         setImageBitmap(null)
