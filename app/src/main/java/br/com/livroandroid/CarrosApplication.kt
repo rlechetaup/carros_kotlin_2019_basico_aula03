@@ -2,7 +2,6 @@ package br.com.livroandroid
 
 import android.app.Application
 import android.util.Log
-import java.lang.IllegalStateException
 
 /**
  * Classe global que gerencia ciclo de vida do app.

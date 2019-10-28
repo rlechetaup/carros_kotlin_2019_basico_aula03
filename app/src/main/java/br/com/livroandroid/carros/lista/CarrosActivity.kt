@@ -1,7 +1,7 @@
 package br.com.livroandroid.carros.lista
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import br.com.livroandroid.carros.R
 
 // Activity com a lista de carros

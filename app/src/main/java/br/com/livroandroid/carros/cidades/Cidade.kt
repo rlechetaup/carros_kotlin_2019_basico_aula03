@@ -1,7 +1,5 @@
 package br.com.livroandroid.carros.cidades
 
-import androidx.room.Entity
-import androidx.room.PrimaryKey
 import java.io.Serializable
 
 class Cidade : Serializable {
@@ -12,11 +10,12 @@ class Cidade : Serializable {
     var lat = 0.0;
     var lng = 0.0;
 
-//    var pontosTuristicos : List<PontoTuristico>;
-
+    var pontosTuristicos : List<PontoTuristico> = listOf();
     override fun toString(): String {
-        return nome
+        return "Cidade(id=$id, nome='$nome', urlFoto='$urlFoto', lat=$lat, lng=$lng, pontosTuristicos=$pontosTuristicos)"
     }
+
+
 }
 
 class PontoTuristico : Serializable {

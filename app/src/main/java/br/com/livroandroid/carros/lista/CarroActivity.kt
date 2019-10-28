@@ -1,9 +1,9 @@
 package br.com.livroandroid.carros.lista
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import androidx.appcompat.app.AppCompatActivity
 import br.com.livroandroid.carros.R
 import br.com.livroandroid.carros.favoritos.FavoritosService
 import br.com.livroandroid.carros.utils.extensions.loadUrl

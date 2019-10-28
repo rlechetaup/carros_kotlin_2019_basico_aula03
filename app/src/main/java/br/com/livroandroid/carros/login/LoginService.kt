@@ -1,8 +1,8 @@
 package br.com.livroandroid.carros.login
 
 import android.util.Log
-import br.com.livroandroid.carros.utils.extensions.fromJson
 import br.com.livroandroid.carros.utils.HttpHelper
+import br.com.livroandroid.carros.utils.extensions.fromJson
 
 // API de Login
 // "object" no Kotlin deixa essa classe com Singleton

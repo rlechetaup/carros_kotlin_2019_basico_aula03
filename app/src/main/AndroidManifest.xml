@@ -26,7 +26,7 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyChAziSYUXmSDH53GQ88G8KOpYN-n5jtcE" />
+            android:value="AIzaSyCH6QC-_pSPgV727WT-roY9D2Cy4ywX8xY" />
 
         <activity
             android:name=".cidades.CidadeActivity"

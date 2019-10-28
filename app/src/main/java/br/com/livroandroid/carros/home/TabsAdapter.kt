@@ -6,8 +6,8 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import br.com.livroandroid.carros.R
 import br.com.livroandroid.carros.cidades.CidadesFragment
-import br.com.livroandroid.carros.lista.CarrosFragment
 import br.com.livroandroid.carros.favoritos.FavoritosFragment
+import br.com.livroandroid.carros.lista.CarrosFragment
 
 // Controla a quantidade de tabs
 class TabsAdapter(private val context: Context, fm: FragmentManager) : FragmentPagerAdapter(fm,BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT) {

@@ -1,10 +1,9 @@
 package br.com.livroandroid.carros.home
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import br.com.livroandroid.carros.R
-import br.com.livroandroid.carros.home.TabsAdapter
 import kotlinx.android.synthetic.main.activity_main.*
 
 // Home com Tabs

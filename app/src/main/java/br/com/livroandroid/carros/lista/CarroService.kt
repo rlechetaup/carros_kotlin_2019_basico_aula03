@@ -1,8 +1,8 @@
 package br.com.livroandroid.carros.lista
 
 import android.util.Log
-import br.com.livroandroid.carros.utils.extensions.fromJson
 import br.com.livroandroid.carros.utils.HttpHelper
+import br.com.livroandroid.carros.utils.extensions.fromJson
 
 // Web Service dos carros
 class CarroService {

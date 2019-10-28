@@ -1,8 +1,8 @@
 package br.com.livroandroid.carros.cidades
 
 import android.util.Log
-import br.com.livroandroid.carros.utils.extensions.fromJson
 import br.com.livroandroid.carros.utils.HttpHelper
+import br.com.livroandroid.carros.utils.extensions.fromJson
 
 // Web Service dos carros
 class CidadeService {
@@ -18,6 +18,7 @@ class CidadeService {
                 Log.d("up","json: $json")
                 val cidades = fromJson<List<Cidade>>(json)
                 Log.d("up","cidades: $cidades")
+                Log.d("up","pontos: $cidades")
                 return cidades
             }catch (error: Exception) {
                 Log.e("up","Error $error")

@@ -1,7 +1,7 @@
 package br.com.livroandroid.carros.favoritos
 
-import br.com.livroandroid.carros.lista.Carro
 import br.com.livroandroid.carros.favoritos.dao.DatabaseManager
+import br.com.livroandroid.carros.lista.Carro
 
 // Salva os carros no banco de dados
 object FavoritosService {

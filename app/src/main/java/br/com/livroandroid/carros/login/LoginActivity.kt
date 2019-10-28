@@ -1,12 +1,15 @@
 package br.com.livroandroid.carros.login
 
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import br.com.livroandroid.carros.R
 import br.com.livroandroid.carros.home.MainActivity
 import kotlinx.android.synthetic.main.activity_login.*
-import org.jetbrains.anko.*
+import org.jetbrains.anko.alert
+import org.jetbrains.anko.doAsync
+import org.jetbrains.anko.startActivity
+import org.jetbrains.anko.uiThread
 
 // Tela de Login
 class LoginActivity : AppCompatActivity() {

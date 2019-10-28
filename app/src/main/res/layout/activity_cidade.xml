@@ -6,12 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".lista.CarroActivity"
     android:orientation="vertical"
-    android:gravity="center">
+    >
 
     <ImageView
         android:id="@+id/img"
         android:layout_width="350dp"
         android:layout_height="150dp"
+        />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         />
 
 </LinearLayout>
