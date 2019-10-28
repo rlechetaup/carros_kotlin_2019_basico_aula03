@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.livroandroid.carros">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:name="br.com.livroandroid.CarrosApplication"
         android:allowBackup="false"
@@ -13,10 +19,20 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- Google Play Services -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyChAziSYUXmSDH53GQ88G8KOpYN-n5jtcE" />
+
         <activity
             android:name=".cidades.CidadeActivity"
             android:label="@string/title_activity_cidade"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".home.MainActivity"
+            ></activity>
 
         <activity android:name=".home.MainActivity"></activity>
 
@@ -31,14 +47,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".lista.CarrosActivity" />
-        <meta-data
-            android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyChAziSYUXmSDH53GQ88G8KOpYN-n5jtcE" />
-    </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    </application>
 
 </manifest>
