@@ -6,4 +6,6 @@
 
     <string name="tab1">Carros</string>
     <string name="tab2">Favoritos</string>
+    <string name="tab3">Cidades</string>
+    <string name="title_activity_cidade">Cidade</string>
 </resources>
