@@ -11,6 +11,7 @@ class Cidade : Serializable {
     var lng = 0.0;
 
     var pontosTuristicos : List<PontoTuristico> = listOf();
+
     override fun toString(): String {
         return "Cidade(id=$id, nome='$nome', urlFoto='$urlFoto', lat=$lat, lng=$lng, pontosTuristicos=$pontosTuristicos)"
     }

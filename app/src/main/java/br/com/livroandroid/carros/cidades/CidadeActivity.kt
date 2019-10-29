@@ -46,37 +46,19 @@ class CidadeActivity : AppCompatActivity() , OnMapReadyCallback {
         // O método onMapReady(map) é chamado quando a inicialização do mapa estiver Ok
         this.map = map
 
-        // Usa a função apply porque o carro pode ser nulo
-        cidade.apply {
-            // Vamos mostrar a localização do usuário apenas para carros com lat/lng=0.
-            if (lat.toDouble() == 0.0) {
-                // Ativa o botão para mostrar minha localização
-                val ok = PermissionUtils.validate(this@CidadeActivity, 1,
-                    Manifest.permission.ACCESS_FINE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION
-                )
-                if (ok) {
-                    // Somente usa o GPS se a permissão estiver OK.
-                    map.isMyLocationEnabled = true
-                }
-            } else {
-                // Cria o objeto lat/lng com a coordenada da fábrica
-                val location = LatLng(lat, lng)
-                // Posiciona o mapa na coordenada da fábrica (zoom = 13)
-                val update = CameraUpdateFactory.newLatLngZoom(location, 13f)
-                map.moveCamera(update)
-                // Marcador no local da fábrica
-                map.addMarker(
-                    MarkerOptions()
-                    .title(nome)
-                    .position(location))
-            }
+        map.mapType = GoogleMap.MAP_TYPE_NORMAL
 
-            // Tipo do mapa: normal, satélite, terreno ou híbrido
-            map.mapType = GoogleMap.MAP_TYPE_NORMAL
+        // Localização do mapa
+        val update = CameraUpdateFactory.newLatLngZoom(LatLng(cidade.lat, cidade.lng), 11.0f)
+        map.moveCamera(update)
+
+        // Adiciona os marcadores
+        cidade.pontosTuristicos.forEach { p ->
+            map.addMarker(
+                MarkerOptions()
+                    .title(p.nome)
+                    .position(LatLng(p.lat, p.lng)))
         }
-
-
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
